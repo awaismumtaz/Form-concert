@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form demo</title>
+</head>
+<body>
+    <div id="site-container">
+        <h1>Concert Adding Form</h1>
+        <form action="https://localhost:7042/form" method="post">
+            <div>
+                <label for="id">Enter Concert ID: </label>
+                <input type="number" name="id" id="id" min="1" max="100">
+            </div>
+
+            <div>
+                <label for="venue">Venue :</label>
+                <input type="text" name="venue" id="venue">
+            </div>
+            <div >
+                <label for="performer">Performer :</label>
+                <input type="text" name="performer" id="performer">
+            </div>
+            <div>
+                <label for="capacity">Capacity :</label>
+                <input type="number" name="capacity" id="capacity" min="1">
+            </div>
+
+            <div>
+                <label for="specificTime">Time and Date :</label>
+                <input type="datetime" name="specificTime" id="specificTime" placeholder="2025-01-24">
+            </div>
+
+          
+            <div>
+                <p>Use this format for the date. 2025-01-24</p>
+            </div>
+            
+            <div class="one-column">
+                <input type="submit" value="Submit">
+            </div>
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>
